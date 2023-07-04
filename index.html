@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container content">
+        <div class="form">
+            <form action="#">
+                <div class="inputs data">
+                    <div class="dates">
+                        <label for="Day" class="label-text">Day</label>
+                        <input type="text" placeholder="DD" class="border" id="Day" min="0" max="31" autocomplete="off">
+                        <p id="error-message" class="txt" style="color:hsl(0, 100%, 67%); display: none;">Must be a
+                            Valid day.
+                        </p>
+                        <p id="empty" class="empty-text" style="color:hsl(0, 100%, 67%); display: none;">This Field is
+                            Required.
+                        </p>
+                    </div>
+                    <div class="months">
+                        <label for="month" class="label-text">Month</label>
+                        <input type="text" placeholder="MM" class="border" id="month" min="1" max="12"
+                            autocomplete="off">
+                        <p id="error-message1" class="txt" style="color:hsl(0, 100%, 67%); display: none;">Must be a
+                            valid month.
+                        </p>
+                        <p id="empty1" class="empty-text" style="color:hsl(0, 100%, 67%); display: none;">This Field is
+                            Required.
+                        </p>
+                    </div>
+                    <div class="Year">
+                        <label for="year" class="label-text">Year</label>
+                        <input type="text" placeholder="YYYY" class="border" id="year" autocomplete="off">
+                        <p id="error-message2" class="txt" style="color:hsl(0, 100%, 67%); display: none ;">Must be in
+                            the past.
+                        </p>
+                        <p id="empty2" class="empty-text" style="color:hsl(0, 100%, 67%); display: none;">This Field is
+                            Required.
+                        </p>
+                    </div>
+                </div>
+                <div class="btn">
+                    <hr class="line">
+                    <input type="submit" id="sbtn" value="">
+                    </span>
+            </form>
+        </div>
+        <div class="result">
+            <p class="first-message text">
+                <span class="hypen" id="fmessage">--</span>
+                years
+            </p>
+            <p class="second-message text">
+                <span class="hypen" id="smessage">--</span>
+                months
+            </p>
+            <p class="third-message text">
+                <span class="hypen" id="tmessage">--</span>
+                days
+            </p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
